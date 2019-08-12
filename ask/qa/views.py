@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def test(request, *args, **kwargs):
-	return HttpResponse('OK')
+	return HttpResponse("Hello, world. You're at the polls index.")
 
 
 def not_found(request):
