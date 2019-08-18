@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from ask.views import not_found
+from qa import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,6 +26,4 @@ urlpatterns = [
     url(r'^ask/', views.test),
     url(r'^popular/', views.test),
     url(r'^new/', views.test),
-
-    url(r'^', not_found),
 ]

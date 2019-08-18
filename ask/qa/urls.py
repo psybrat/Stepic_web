@@ -1,5 +1,5 @@
-from django.conf.urls import include, url
-from . import views
+from django.conf.urls import url
+import views
 
 urlpatterns = [
 	url(r'^(?P<id>d+)/$', views.test),
