@@ -1,6 +1,7 @@
 from django.conf.urls import url
-import views
+from qa.views import test
 
 urlpatterns = [
-	url(r'^(?P<id>d+)/$', views.test),
+	url(r'^', test),
+#	url(r'^(?P<id>d+)/$', views.test),
 ]
